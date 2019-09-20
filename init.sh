@@ -21,7 +21,7 @@ sudo apt-get install vlc -y
 
 echo "Getting cool wallpaper..."
 notify-send "Getting cool wallpaper..."
-wget -O wallpaper.jpg https://s17-us2.startpage.com/cgi-bin/serveimage?url=https:%2F%2Fi.imgur.com%2FtTtvLFV.jpg&sp=d20f29331f22df35f0acb85a9c0a40c9
+wget -O wallpaper.jpg https://i.imgur.com/tTtvLFV.jpg
 gsettings set org.gnome.desktop.background picture-uri "wallpaper.jpg"
 
 echo "Installing Musixmatch..."
