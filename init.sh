@@ -21,15 +21,13 @@ sudo apt-get install vlc -y
 
 echo "Getting cool wallpaper..."
 notify-send "Getting cool wallpaper..."
-wget -O wallpaper.jpg https://web.archive.org/web/20190920170123if_/https://s17-us2.startpage.com/cgi-bin/serveimage?url=https:%2F%2Fi.imgur.com%2FtTtvLFV.jpg&sp=d20f29331f22df35f0acb85a9c0a40c9
+wget -O wallpaper.jpg https://s17-us2.startpage.com/cgi-bin/serveimage?url=https:%2F%2Fi.imgur.com%2FtTtvLFV.jpg&sp=d20f29331f22df35f0acb85a9c0a40c9
 gsettings set org.gnome.desktop.background picture-uri "wallpaper.jpg"
 
 echo "Installing Musixmatch..."
 notify-send "Installing Musixmatch..."
-{
 wget -O musixmatch_3.6.1_amd64.deb https://anonymousfiles.io/f/musixmatch_3.6.1_amd64.deb
 sudo apt install ./musixmatch_3.6.1_amd64.deb -y
-} &> /dev/null
 
 echo "Installing Android Messages..."
 notify-send "Installing Android Messages..."
