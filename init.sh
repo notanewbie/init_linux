@@ -24,3 +24,11 @@ gsettings set org.gnome.desktop.background picture-uri "wallpaper.png"
 echo "Installing Musixmatch..."
 wget -O musixmatch_3.6.1_amd64.deb https://anonymousfiles.io/f/musixmatch_3.6.1_amd64.deb
 sudo apt install ./musixmatch_3.6.1_amd64.deb
+
+echo "Installing Android Messages..."
+wget -O android-messages-desktop_3.0.0_amd64.deb https://github.com/chrisknepper/android-messages-desktop/releases/download/v3.0.0/android-messages-desktop_3.0.0_amd64.deb
+sudo apt install ./android-messages-desktop_3.0.0_amd64.deb
+
+echo "Installing Caprine (FaceBook Messenger)..."
+wget -O caprine_2.38.0_amd64.deb https://github.com/sindresorhus/caprine/releases/download/v2.38.0/caprine_2.38.0_amd64.deb
+sudo apt install ./caprine_2.38.0_amd64.deb
