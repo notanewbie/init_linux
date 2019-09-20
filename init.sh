@@ -32,3 +32,7 @@ sudo apt install ./android-messages-desktop_3.0.0_amd64.deb
 echo "Installing Caprine (FaceBook Messenger)..."
 wget -O caprine_2.38.0_amd64.deb https://github.com/sindresorhus/caprine/releases/download/v2.38.0/caprine_2.38.0_amd64.deb
 sudo apt install ./caprine_2.38.0_amd64.deb
+
+echo "Installing Writefull..."
+wget -O writefull_3.0.0-beta19_amd64.deb https://s3-eu-west-1.amazonaws.com/writefull-binaries/3.0.0-beta19/writefull_3.0.0-beta19_amd64.deb
+sudo apt install ./writefull_3.0.0-beta19_amd64.deb
