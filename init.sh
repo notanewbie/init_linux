@@ -44,6 +44,11 @@ notify-send "Installing Writefull..."
 wget -O writefull_3.0.0-beta19_amd64.deb https://s3-eu-west-1.amazonaws.com/writefull-binaries/3.0.0-beta19/writefull_3.0.0-beta19_amd64.deb
 sudo apt install ./writefull_3.0.0-beta19_amd64.deb -y
 
+echo "Installing Anbox..."
+notify-send "Installing Anbox..."
+wget -O anbox_0.0~git20190124-1_amd64.deb http://ftp.br.debian.org/debian/pool/contrib/a/anbox/anbox_0.0~git20190124-1_amd64.deb
+sudo apt install ./anbox_0.0~git20190124-1_amd64.deb -y
+
 echo "Looks like everything went according to plan, buddy! Press enter to kill me."
 notify-send "I'm finished. Go back to the terminal and kill me now."
 read varname
