@@ -5,10 +5,13 @@ notify-send "Updating everything..."
 sudo apt-get update
 sudo apt update
 
+echo "Installing Brave Browser Nightly..."
+notify-send "Installing Brave Browser Nightly..."
+sudo apt install brave-browser-nightly
+
 echo "Installing Brave Browser..."
 notify-send "Installing Brave Browser..."
-wget -O brave-browser-nightly_0.72.38_amd64.deb https://github.com/brave/brave-browser/releases/download/v0.72.38/brave-browser-nightly_0.72.38_amd64.deb
-sudo apt install ./brave-browser-nightly_0.72.38_amd64.deb -y
+sudo apt install brave-browser
 
 echo "Installing Spotify..."
 notify-send "Installing Spotify..."
