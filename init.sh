@@ -53,15 +53,15 @@ notify-send "Installing Writefull..."
 wget -O writefull_3.0.0-beta19_amd64.deb https://s3-eu-west-1.amazonaws.com/writefull-binaries/3.0.0-beta19/writefull_3.0.0-beta19_amd64.deb
 sudo apt install ./writefull_3.0.0-beta19_amd64.deb -y
 
-echo "Installing Anbox..."
-notify-send "Installing Anbox..."
-wget -O anbox_0.0~git20190124-1_amd64.deb http://ftp.br.debian.org/debian/pool/contrib/a/anbox/anbox_0.0~git20190124-1_amd64.deb
-sudo apt install ./anbox_0.0~git20190124-1_amd64.deb -y
-
 echo "Installing Whalebird..."
 notify-send "Installing Whalebird..."
 wget -O Whalebird-2.8.6-linux-x64.deb https://github.com/h3poteto/whalebird-desktop/releases/download/2.8.6/Whalebird-2.8.6-linux-x64.deb
 sudo apt install ./Whalebird-2.8.6-linux-x64.deb -y
+
+echo "Installing Minetest..."
+notify-send "Installing Minetest..."
+wget -O minetest_0.4.17.1+repack-1+b1_amd64.deb http://http.us.debian.org/debian/pool/main/m/minetest/minetest_0.4.17.1+repack-1+b1_amd64.deb
+sudo apt install ./minetest_0.4.17.1+repack-1+b1_amd64.deb -y
 
 echo "Looks like everything went according to plan, buddy! Press enter to kill me."
 notify-send "I'm finished. Go back to the terminal and kill me now."
