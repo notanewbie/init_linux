@@ -60,8 +60,15 @@ sudo apt install ./Whalebird-2.8.6-linux-x64.deb -y
 
 echo "Installing Minetest..."
 notify-send "Installing Minetest..."
-wget -O minetest_0.4.17.1+repack-1+b1_amd64.deb http://http.us.debian.org/debian/pool/main/m/minetest/minetest_0.4.17.1+repack-1+b1_amd64.deb
-sudo apt install ./minetest_0.4.17.1+repack-1+b1_amd64.deb -y
+sudo apt install minetest
+
+echo "Installing AssaultCube..."
+notify-send "Installing AssaultCube..."
+sudo apt install assaultcube
+
+echo "Installing Tesseract..."
+notify-send "Installing Tesseract..."
+sudo apt install tesseract-ocr
 
 echo "Looks like everything went according to plan, buddy! Press enter to kill me."
 notify-send "I'm finished. Go back to the terminal and kill me now."
