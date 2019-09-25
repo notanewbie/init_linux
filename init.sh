@@ -60,15 +60,15 @@ sudo apt install ./Whalebird-2.8.6-linux-x64.deb -y
 
 echo "Installing Minetest..."
 notify-send "Installing Minetest..."
-sudo apt install minetest
+sudo apt install minetest -y
 
 echo "Installing AssaultCube..."
 notify-send "Installing AssaultCube..."
-sudo apt install assaultcube
+sudo apt install assaultcube -y
 
 echo "Installing Tesseract..."
 notify-send "Installing Tesseract..."
-sudo apt install tesseract-ocr
+sudo apt install tesseract-ocr -y
 
 echo "Looks like everything went according to plan, buddy! Press enter to kill me."
 notify-send "I'm finished. Go back to the terminal and kill me now."
