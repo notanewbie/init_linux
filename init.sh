@@ -15,9 +15,9 @@ sudo apt install brave-browser -y
 echo "Installing Brave Browser Nightly..."
 notify-send "Installing Brave Browser Nightly..."
 curl -s https://brave-browser-apt-nightly.s3.brave.com/brave-core-nightly.asc | sudo apt-key add -
-sudo sh -c 'echo "deb https://brave-browser-apt-dev.s3.brave.com disco main" >> /etc/apt/sources.list.d/brave-browser-dev.list'
+sudo sh -c 'echo "deb https://brave-browser-apt-nightly.s3.brave.com disco main" >> /etc/apt/sources.list.d/brave-browser-dev.list'
 sudo apt update
-sudo apt install brave-browser-dev -y
+sudo apt install brave-browser-nightly -y
 
 echo "Installing Spotify..."
 notify-send "Installing Spotify..."
