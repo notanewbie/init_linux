@@ -1,5 +1,10 @@
 set +e
 
+echo "Getting cool wallpaper..."
+notify-send "Getting cool wallpaper..."
+wget -O wallpaper.jpg https://i.imgur.com/tTtvLFV.jpg
+gsettings set org.gnome.desktop.background picture-uri "wallpaper.jpg"
+
 echo "Updating everything..."
 notify-send "Updating everything..."
 sudo apt-get update
@@ -24,14 +29,14 @@ notify-send "Installing Spotify..."
 wget -O spotify-client_1.1.10.546.ge08ef575-19_amd64.deb http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.10.546.ge08ef575-19_amd64.deb
 sudo apt install ./spotify-client_1.1.10.546.ge08ef575-19_amd64.deb -y
 
+echo "Installing GIMP..."
+notify-send "Installing GIMP..."
+wget -O gimp_2.10.8-2_amd64.deb http://http.us.debian.org/debian/pool/main/g/gimp/gimp_2.10.8-2_amd64.deb
+sudo apt install ./gimp_2.10.8-2_amd64.deb -y
+
 echo "Installing VLC..."
 notify-send "Installing VLC..."
 sudo apt-get install vlc -y
-
-echo "Getting cool wallpaper..."
-notify-send "Getting cool wallpaper..."
-wget -O wallpaper.jpg https://i.imgur.com/tTtvLFV.jpg
-gsettings set org.gnome.desktop.background picture-uri "wallpaper.jpg"
 
 echo "Installing Musixmatch..."
 notify-send "Installing Musixmatch..."
