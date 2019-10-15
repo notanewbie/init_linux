@@ -24,12 +24,6 @@ sudo sh -c 'echo "deb https://brave-browser-apt-nightly.s3.brave.com disco main"
 sudo apt update
 sudo apt install brave-browser-nightly -y
 
-echo "Installing Mycroft..."
-notify-send "Installing Mycroft..."
-wget https://raw.githubusercontent.com/MycroftAI/installers/master/kde_plasmoid_debian/install.sh
-chmod +x install.sh
-./install.sh
-
 echo "Installing Spotify..."
 notify-send "Installing Spotify..."
 wget -O spotify-client_1.1.10.546.ge08ef575-19_amd64.deb http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.10.546.ge08ef575-19_amd64.deb
