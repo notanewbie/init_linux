@@ -34,6 +34,10 @@ notify-send "Installing GIMP..."
 wget -O gimp_2.10.8-2_amd64.deb http://http.us.debian.org/debian/pool/main/g/gimp/gimp_2.10.8-2_amd64.deb
 sudo apt install ./gimp_2.10.8-2_amd64.deb -y
 
+echo "Installing GIMP (from Sudo)..."
+notify-send "Installing GIMP (from Sudo)..."
+sudo apt-get install gimp -y
+
 echo "Installing VLC..."
 notify-send "Installing VLC..."
 sudo apt-get install vlc -y
