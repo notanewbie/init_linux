@@ -2,8 +2,12 @@ set +e
 
 echo "Getting cool wallpaper..."
 notify-send "Getting cool wallpaper..."
-wget -O wallpaper.jpg https://i.imgur.com/tTtvLFV.jpg
-gsettings set org.gnome.desktop.background picture-uri "wallpaper.jpg"
+wget -O wallpaper1.jpg https://i.imgur.com/tTtvLFV.jpg
+gsettings set org.gnome.desktop.background picture-uri "wallpaper1.jpg"
+
+echo "Getting another cool wallpaper in case that one isn't nice enough for you..."
+notify-send "Getting another cool wallpaper in case that one isn't nice enough for you..."
+wget -O wallpaper2.jpg https://cdn-image.departures.com/sites/default/files/1578607308/header-pamukkale-thermal-pools-turkey-HOTSPRINGS0120.jpg
 
 echo "Updating everything..."
 notify-send "Updating everything..."
