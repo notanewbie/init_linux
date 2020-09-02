@@ -33,6 +33,18 @@ sudo sh -c 'echo "deb https://brave-browser-apt-nightly.s3.brave.com disco main"
 sudo apt update
 sudo apt install brave-browser-nightly -y
 
+echo "Installing Waterfox..."
+notify-send "Installing Waterfox..."
+wget -O waterfox.tar.bz2 https://cdn.waterfox.net/releases/linux64/installer/waterfox-current-2020.08.en-US.linux-x86_64.tar.bz2
+tar -xvjf ./waterfox.tar.bz2 
+cd ./waterfox
+./waterfox
+
+echo "Installing GIMP..."
+notify-send "Installing GIMP..."
+wget -O gimp_2.10.8-2_amd64.deb http://http.us.debian.org/debian/pool/main/g/gimp/gimp_2.10.8-2_amd64.deb
+sudo apt install ./gimp_2.10.8-2_amd64.deb -y
+
 echo "Installing Spotify..."
 notify-send "Installing Spotify..."
 wget -O spotify-client_1.1.10.546.ge08ef575-19_amd64.deb http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.10.546.ge08ef575-19_amd64.deb
