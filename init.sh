@@ -1,5 +1,10 @@
 set +e
 
+echo "Fixing the time..."
+notify-send "Fixing the time..."
+timedatectl set–ntp no
+timedatectl set–ntp yes
+
 echo "Getting cool wallpaper..."
 notify-send "Getting cool wallpaper..."
 wget -O wallpaper1.jpg https://i.imgur.com/tTtvLFV.jpg
